@@ -11,10 +11,10 @@ function Conversation({ conversation, lastIdx, emoji }) {
 
     return (
         <>
-            <div className={`flex gap-2 items-center hover:bg-sky-600 rounded p-2 py-1 cursor-pointer transition-all ${isSelected ? 'bg-sky-600' : ''}`}
+            <div className={`flex gap-2 items-center hover:bg-sky-600 rounded p-2 py-3 cursor-pointer transition-all ${isSelected ? 'bg-sky-600' : ''}`}
                 onClick={() => setSelectedConversation(conversation)}>
                 <div className={`avatar ${isOnline ? 'online' : ''}`}>
-                    <div className="w-12 rounded-full">
+                    <div className="w-14 rounded-full border-2 border-blue-600">
                         <img src={conversation.profilePicture} alt="User avatar" />
                     </div>
                 </div>
