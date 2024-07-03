@@ -14,7 +14,7 @@ function Conversation({ conversation, lastIdx, emoji }) {
             <div className={`flex gap-2 items-center hover:bg-sky-600 rounded p-2 py-3 cursor-pointer transition-all ${isSelected ? 'bg-sky-600' : ''}`}
                 onClick={() => setSelectedConversation(conversation)}>
                 <div className={`avatar ${isOnline ? 'online' : ''}`}>
-                    <div className="w-14 rounded-full border-2 border-blue-600">
+                    <div className="w-14 rounded-full">
                         <img src={conversation.profilePicture} alt="User avatar" />
                     </div>
                 </div>
